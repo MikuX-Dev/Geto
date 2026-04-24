@@ -40,7 +40,7 @@ room = "2.6.1"
 robolectric = "4.12.2"
 roborazzi = "1.15.0"
 shizuku = "13.1.5"
-truth = "1.4.2"
+truth = "1.4.5"
 
 [bundles]
 androidx-compose-ui-test = ["androidx-compose-ui-test", "androidx-compose-ui-test-manifest"]
