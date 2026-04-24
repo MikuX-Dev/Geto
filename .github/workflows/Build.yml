@@ -134,21 +134,21 @@ jobs:
           -Pandroid.experimental.testOptions.managedDevices.setupTimeoutMinutes=5
 
       - name: Upload build outputs (APKs)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: APKs
           path: '**/build/outputs/apk/**/*.apk'
 
       - name: Upload JVM local results (XML)
         if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: local-test-results
           path: '**/build/test-results/test*UnitTest/**.xml'
 
       - name: Upload screenshot results (PNG)
         if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: screenshot-test-results
           path: '**/build/outputs/roborazzi/*_compare.png'
@@ -158,7 +158,7 @@ jobs:
 
       - name: Upload lint reports (HTML)
         if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: lint-reports
           path: '**/build/reports/lint-results-*.html'
@@ -236,7 +236,7 @@ jobs:
 
       - name: Upload test reports
         if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: test-reports-${{ matrix.api-level }}
           path: '**/build/reports/androidTests'
@@ -255,7 +255,7 @@ jobs:
 
       - name: Upload local coverage reports (XML + HTML) (only API 30)
         if: matrix.api-level == 30
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: coverage-reports
           if-no-files-found: error
