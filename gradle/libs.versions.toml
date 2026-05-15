@@ -9,7 +9,7 @@ androidxComposeBom = "2026.05.00"
 androidxCoreKtx = "1.13.1"
 androidxCoreSplashscreen = "1.2.0"
 androidxDataStore = "1.1.1"
-androidxEspresso = "3.6.1"
+androidxEspresso = "3.7.0"
 androidxHiltNavigationCompose = "1.2.0"
 androidxLifeCycle = "2.10.0"
 
