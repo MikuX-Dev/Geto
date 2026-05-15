@@ -12,10 +12,8 @@ androidxDataStore = "1.1.1"
 androidxEspresso = "3.6.1"
 androidxHiltNavigationCompose = "1.2.0"
 androidxLifeCycle = "2.10.0"
-androidxLifecycleViewModelCompose = "2.8.6"
 
-
-
+androidxLifecycleViewModelCompose = "2.10.0"
 androidxMacroBenchmark = "1.4.1"
 androidxNavigationCompose = "2.9.8"
 androidxProfileInstaller = "1.4.1"
